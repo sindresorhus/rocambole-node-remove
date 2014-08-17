@@ -1,7 +1,7 @@
 'use strict';
 var assert = require('assert');
 var rocambole = require('rocambole');
-var removeNode = require('./index');
+var removeNode = require('./');
 
 it('should remove a AST node', function () {
 	var str = rocambole.moonwalk('if (true) { foo() }', function (node) {

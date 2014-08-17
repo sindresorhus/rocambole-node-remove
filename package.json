@@ -35,6 +35,6 @@
   },
   "devDependencies": {
     "mocha": "*",
-    "rocambole": "^0.3.2"
+    "rocambole": "^0.3.6"
   }
 }
