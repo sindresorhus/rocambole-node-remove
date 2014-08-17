@@ -1,6 +1,6 @@
 {
   "name": "rocambole-node-remove",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "description": "Remove a rocambole AST node",
   "license": "MIT",
   "repository": "sindresorhus/rocambole-node-remove",
