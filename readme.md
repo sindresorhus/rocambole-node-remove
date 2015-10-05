@@ -5,7 +5,7 @@
 
 ## Install
 
-```sh
+```
 $ npm install --save rocambole-node-remove
 ```
 
@@ -13,15 +13,15 @@ $ npm install --save rocambole-node-remove
 ## Usage
 
 ```js
-var rocambole = require('rocambole');
-var removeNode = require('rocambole-node-remove');
+const rocambole = require('rocambole');
+const removeNode = require('rocambole-node-remove');
 
-rocambole.moonwalk('if (true) { foo() }', function (node) {
+rocambole.moonwalk('if (true) { foo() }', node => {
 	if (node.type === 'CallExpression') {
 		removeNode(node);
 	}
 }).toString();
-//=> if (true) {  }
+//=> 'if (true) {  }'
 ```
 
 
