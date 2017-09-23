@@ -6,7 +6,7 @@
 ## Install
 
 ```
-$ npm install --save rocambole-node-remove
+$ npm install rocambole-node-remove
 ```
 
 
@@ -27,4 +27,4 @@ rocambole.moonwalk('if (true) { foo() }', node => {
 
 ## License
 
-MIT © [Sindre Sorhus](http://sindresorhus.com)
+MIT © [Sindre Sorhus](https://sindresorhus.com)

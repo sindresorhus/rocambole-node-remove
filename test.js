@@ -1,14 +1,13 @@
-'use strict';
-var assert = require('assert');
-var rocambole = require('rocambole');
-var removeNode = require('./');
+import test from 'ava';
+import rocambole from 'rocambole';
+import m from '.';
 
-it('should remove a AST node', function () {
-	var str = rocambole.moonwalk('if (true) { foo() }', function (node) {
+test('remove a AST node', t => {
+	const source = rocambole.moonwalk('if (true) { foo() }', node => {
 		if (node.type === 'CallExpression') {
-			removeNode(node);
+			m(node);
 		}
 	}).toString();
 
-	assert.strictEqual(str, 'if (true) {  }');
+	t.is(source, 'if (true) {  }');
 });

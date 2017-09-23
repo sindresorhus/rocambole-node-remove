@@ -1,6 +1,6 @@
 'use strict';
-var token = require('rocambole-token');
+const token = require('rocambole-token');
 
-module.exports = function (node) {
+module.exports = node => {
 	token.eachInBetween(node.startToken, node.endToken, token.remove);
 };
